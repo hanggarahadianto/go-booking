@@ -31,6 +31,7 @@ func InitializeDb(dbConfig *utils.Config) {
 
 	db.AutoMigrate(
 		&models.Building{},
+		&models.User{},
 	)
 
 	DB = db

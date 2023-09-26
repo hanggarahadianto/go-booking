@@ -25,6 +25,11 @@ type Config struct {
 	AccessTokenMaxAge      int           `mapstructure:"ACCESS_TOKEN_MAXAGE"`
 	RefreshTokenMaxAge     int           `mapstructure:"REFRESH_TOKEN_MAXAGE"`
 
+	CLOUDINARY_CLOUD_NAME    string `mapstructure:"CLOUDINARY_CLOUD_NAME"`
+	CLOUDINARY_API_KEY       string `mapstructure:"CLOUDINARY_API_KEY"`
+	CLOUDINARY_API_SECRET    string `mapstructure:"CLOUDINARY_API_SECRET"`
+	CLOUDINARY_UPLOAD_FOLDER string `mapstructure:"CLOUDINARY_UPLOAD_FOLDER"`
+
 	EmailFrom string `mapstructure:"EMAIL_FROM"`
 	SMTPHost  string `mapstructure:"SMTP_HOST"`
 	SMTPPass  string `mapstructure:"SMTP_PASS"`
